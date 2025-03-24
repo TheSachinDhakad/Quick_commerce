@@ -19,6 +19,9 @@ const allowedOrigins = [
   "https://razorpay.com",
   "https://slayyers.niistcse.com",
   "https://slayyers.in",
+  "https://bt-claint.vercel.app",
+  "https://bt-claint.vercel.app/"
+
 ];
 
 if (process.env.NODE_ENV !== "production") {
