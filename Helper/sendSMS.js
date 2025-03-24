@@ -8,11 +8,14 @@ const twilioPhone = process.env.TWILIO_PHONE_NUMBER;
 const client = new twilio(accountSid, authToken);
 
 const sendMessage = async (to, messageBody) => {
+  console.log("TWILIO_ACCOUNT_SID:", process.env.TWILIO_ACCOUNT_SID);
+  console.log("TWILIO_AUTH_TOKEN:", process.env.TWILIO_AUTH_TOKEN);
+
   try {
     const message = await client.messages.create({
       body: messageBody,
       from: twilioPhone,
-      to: to, // Recipient's phone number
+      to: to,
     });
 
     console.log(`${to}: ${message.sid} => ${messageBody}`);

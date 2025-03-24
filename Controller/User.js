@@ -418,7 +418,6 @@ const verifyLoginOtp = async (req, res) => {
   try {
     let { userId, userRole, otp } = req.auth;
     let { auth_otp } = req.body;
-
     if (auth_otp !== otp) {
       return responseSent(res, false, 400, "Invalid OTP");
     }
