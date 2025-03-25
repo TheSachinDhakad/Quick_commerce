@@ -20,7 +20,8 @@ const allowedOrigins = [
   "https://slayyers.niistcse.com",
   "https://slayyers.in",
   "https://bt-claint.vercel.app",
-  "https://bt-claint.vercel.app/"
+  "https://bt-claint.vercel.app/",
+  "http://localhost:3000",
 
 ];
 
